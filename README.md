@@ -1,5 +1,7 @@
-# My project for Google Summer of Code 2020
-I worked with Open Printing (under The Linux Foundation) for Google Summer of Code 2020. My project was titled [Common Print Dialog Backends (CPDB) Qt Implementation](https://summerofcode.withgoogle.com/projects/#6705486251950080).
+## Common Print Dialog Backends (CPDB) Qt Implementation
+
+## About me
+I am [Priydarshi Singh](https://github.com/dryairship). I worked with Open Printing (under The Linux Foundation) for Google Summer of Code 2020. My project was titled [Common Print Dialog Backends (CPDB) Qt Implementation](https://summerofcode.withgoogle.com/projects/#6705486251950080).
 
 ## About the project
 ### Common Print Dialog Backends
