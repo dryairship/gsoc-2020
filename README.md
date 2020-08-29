@@ -28,3 +28,10 @@ My commits can be found [here](https://github.com/dryairship/qtbase/commits/gsoc
 
 ### Work left
 The only task remaining is to get the code merged in Qt's official repo. I'd also need to do any changes suggested by Qt's reviewers.
+
+## Acknowledgements
+I am thankful to my mentors Dongxu and Till for their guidance throughout the project. The interactions with them and working on this project were together a great learning experience and I gained a lot of knowledge into the working of printing systems as well as how a large library like Qt is maintained.
+
+I would also like to thank Rithvik, who worked on this project before, for being available for guidance.
+
+It was a great experience working on this project!
