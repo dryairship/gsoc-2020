@@ -1,1 +1,5 @@
 theme: jekyll-theme-slate
+title: dryairship's GSoC 2020 Project
+description: Work Product submission for the Common Print Dialog Backends (CPDB) Qt Implementation Project, done by Priydarshi Singh (@dryairship) in Google Summer of Code 2020.
+github:
+  repository_url: https://github.com/dryairship/qtbase/compare/5.15...dryairship:gsoc-2020
