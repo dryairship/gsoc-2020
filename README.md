@@ -30,6 +30,16 @@ My commits can be found [here](https://github.com/dryairship/qtbase/commits/gsoc
 The only task remaining is to get the code merged in Qt's official repo. I'd also need to do any changes suggested by Qt's reviewers.
 
 ## Build instructions
+You can see the instructions [here](https://wiki.qt.io/Building_Qt_5_from_Git) on how to build Qt from source.
+
+For this project, you need the following libraries installed on your system:
+ - `libglib-2.0`
+ - `cpdb-libs`
+ - At least one of the backends: 
+   - `cpdb-libs-cups`
+   - `cpdb-libs-gcp`
+   - `cpdb-libs-file`
+
 Once you have obtained the source code of Qt, create a new shadow build folder. The following commands must be executed in the shadow build folder, assuming that the source code of Qt is available in `/path/to/qt5`:
 
 ### Normal build (with CPDB enabled)
@@ -38,7 +48,8 @@ Once you have obtained the source code of Qt, create a new shadow build folder. 
 make -j$(nproc)
 ```
 
-### Build with CPDB disbaled
+### Build with CPDB disabled
+You can just add the `-no-cpdb` configuration flag to disable CPDB.  
 ```
 /path/to/qt5/configure -developer-build -opensource -confirm-license -nomake examples -nomake tests -no-cpdb
 make -j$(nproc)
