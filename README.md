@@ -1,2 +1,6 @@
-# gsoc-2020
-Work Product Submission for GSoC 2020
+# My project for Google Summer of Code 2020
+I worked with Open Printing (under The Linux Foundation) for Google Summer of Code 2020. My project was titled [Common Print Dialog Backends (CPDB) Qt Implementation](https://summerofcode.withgoogle.com/projects/#6705486251950080).
+
+## About the project
+### Common Print Dialog Backends
+CPDB is one of the main projects of Open Printing. It aims to separate the development of print dialogs and the support for different print technologies. I idea is to have a unified library ([cpdb-libs](https://github.com/OpenPrinting/cpdb-libs)) which the applications can use to check available printers, check the various options supported by those printers, and send print jobs with specified settings. This way, when new printing technologies are developed, all the applications won't have to be updated to use those technologies. Only the CPDB libraries need to be updated, and all the applications that use CPDB will automatically support the new technologies. Currently, the cpdb-libs has backends to support printing to [a file](https://github.com/OpenPrinting/cpdb-backend-file), on [CUPS](https://github.com/OpenPrinting/cpdb-backend-cups) and on [Google Cloud Print](https://github.com/OpenPrinting/cpdb-backend-gcp).
