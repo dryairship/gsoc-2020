@@ -29,6 +29,21 @@ My commits can be found [here](https://github.com/dryairship/qtbase/commits/gsoc
 ### Work left
 The only task remaining is to get the code merged in Qt's official repo. I'd also need to do any changes suggested by Qt's reviewers.
 
+## Build instructions
+Once you have obtained the source code of Qt, create a new shadow build folder. The following commands must be executed in the shadow build folder, assuming that the source code of Qt is available in `/path/to/qt5`:
+
+### Normal build (with CPDB enabled)
+```
+/path/to/qt5/configure -developer-build -opensource -confirm-license -nomake examples -nomake tests
+make -j$(nproc)
+```
+
+### Build with CPDB disbaled
+```
+/path/to/qt5/configure -developer-build -opensource -confirm-license -nomake examples -nomake tests -no-cpdb
+make -j$(nproc)
+```
+
 ## Acknowledgements
 I am thankful to my mentors Dongxu and Till for their guidance throughout the project. The interactions with them and working on this project were together a great learning experience and I gained a lot of knowledge into the working of printing systems as well as how a large library like Qt is maintained.
 
